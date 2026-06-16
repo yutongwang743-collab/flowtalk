@@ -1,0 +1,172 @@
+<h2>学习中心 · 两列编号布局</h2>
+<p class="subtitle">参考微信读书"分类/榜单"的编号网格布局</p>
+
+<div class="split">
+  <!-- LEFT: WeRead reference - category/book list -->
+  <div class="mockup">
+    <div class="mockup-header">微信读书 · 榜单参考</div>
+    <div class="mockup-body" style="font-size:10px;line-height:1.4;background:#f5f5f5;padding:0;max-width:375px;margin:0 auto;">
+      <div style="background:#fff;padding:10px 14px;display:flex;align-items:center;border-bottom:1px solid #eee;">
+        <span>←</span>
+        <span style="font-weight:700;font-size:13px;color:#1a1a1a;margin:0 auto;">热门榜单</span>
+        <span style="width:20px;"></span>
+      </div>
+      <div style="background:#fff;padding:10px 14px;display:flex;gap:6px;overflow-x:auto;">
+        <span style="padding:3px 10px;background:#333;color:#fff;border-radius:12px;font-size:8px;white-space:nowrap;">全部</span>
+        <span style="padding:3px 10px;color:#666;font-size:8px;white-space:nowrap;">精品小说</span>
+        <span style="padding:3px 10px;color:#666;font-size:8px;white-space:nowrap;">历史</span>
+        <span style="padding:3px 10px;color:#666;font-size:8px;white-space:nowrap;">心理学</span>
+      </div>
+      <div style="padding:8px 14px;">
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;">
+          <div style="display:flex;gap:6px;align-items:flex-start;">
+            <span style="font-size:14px;font-weight:700;color:#ccc;line-height:1;">1</span>
+            <div style="width:36px;height:48px;background:#f0f0f0;border-radius:3px;flex-shrink:0;"></div>
+            <div style="min-width:0;">
+              <div style="font-size:9px;color:#333;font-weight:600;line-height:1.3;">书名标题</div>
+              <div style="font-size:7px;color:#999;">作者</div>
+              <div style="font-size:7px;color:#f5a623;">⭐ 4.8</div>
+            </div>
+          </div>
+          <div style="display:flex;gap:6px;align-items:flex-start;">
+            <span style="font-size:14px;font-weight:700;color:#ccc;line-height:1;">2</span>
+            <div style="width:36px;height:48px;background:#f0f0f0;border-radius:3px;flex-shrink:0;"></div>
+            <div style="min-width:0;">
+              <div style="font-size:9px;color:#333;font-weight:600;line-height:1.3;">书名标题</div>
+              <div style="font-size:7px;color:#999;">作者</div>
+              <div style="font-size:7px;color:#f5a623;">⭐ 4.6</div>
+            </div>
+          </div>
+          <div style="display:flex;gap:6px;align-items:flex-start;">
+            <span style="font-size:14px;font-weight:700;color:#ccc;line-height:1;">3</span>
+            <div style="width:36px;height:48px;background:#f0f0f0;border-radius:3px;flex-shrink:0;"></div>
+            <div style="min-width:0;">
+              <div style="font-size:9px;color:#333;font-weight:600;line-height:1.3;">书名标题</div>
+              <div style="font-size:7px;color:#999;">作者</div>
+              <div style="font-size:7px;color:#f5a623;">⭐ 4.5</div>
+            </div>
+          </div>
+          <div style="display:flex;gap:6px;align-items:flex-start;">
+            <span style="font-size:14px;font-weight:700;color:#ccc;line-height:1;">4</span>
+            <div style="width:36px;height:48px;background:#f0f0f0;border-radius:3px;flex-shrink:0;"></div>
+            <div style="min-width:0;">
+              <div style="font-size:9px;color:#333;font-weight:600;line-height:1.3;">书名标题</div>
+              <div style="font-size:7px;color:#999;">作者</div>
+              <div style="font-size:7px;color:#f5a623;">⭐ 4.4</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- RIGHT: 趣魅 lessons page -->
+  <div class="mockup">
+    <div class="mockup-header">趣魅 · 学习中心</div>
+    <div class="mockup-body" style="font-size:10px;line-height:1.4;background:#f5f5f5;padding:0;max-width:375px;margin:0 auto;">
+
+      <!-- Header -->
+      <div style="background:#fff;padding:10px 14px;display:flex;align-items:center;border-bottom:1px solid #eee;">
+        <span style="font-size:10px;color:#D4A090;">← 返回</span>
+        <span style="font-weight:700;font-size:13px;color:#1a1a1a;margin:0 auto;">学习中心</span>
+        <span style="width:30px;"></span>
+      </div>
+
+      <!-- Category filter tabs -->
+      <div style="background:#fff;padding:10px 14px;display:flex;gap:8px;overflow-x:auto;border-bottom:1px solid #f5f5f5;">
+        <span style="padding:4px 12px;background:#8B3A2A;color:#fff;border-radius:20px;font-size:9px;white-space:nowrap;">全部</span>
+        <span style="padding:4px 12px;color:#666;font-size:9px;white-space:nowrap;">💼 职场</span>
+        <span style="padding:4px 12px;color:#666;font-size:9px;white-space:nowrap;">🏠 家庭</span>
+        <span style="padding:4px 12px;color:#666;font-size:9px;white-space:nowrap;">💕 亲密</span>
+        <span style="padding:4px 12px;color:#666;font-size:9px;white-space:nowrap;">🎤 演讲</span>
+      </div>
+
+      <!-- Count + Grid -->
+      <div style="padding:8px 14px;">
+        <div style="font-size:9px;color:#bbb;margin-bottom:8px;">共 <b style="color:#D4A090;">8</b> 篇课程</div>
+
+        <!-- Two-column numbered grid -->
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px 8px;">
+
+          <div style="display:flex;gap:6px;align-items:flex-start;">
+            <span style="font-size:14px;font-weight:700;color:#D4A090;line-height:1;min-width:12px;">1</span>
+            <div style="flex:1;min-width:0;">
+              <div style="width:100%;aspect-ratio:4/5;background:linear-gradient(135deg,#FDF0EA,#f0e0d8);border-radius:4px;display:flex;align-items:center;justify-content:center;font-size:20px;margin-bottom:5px;">💼</div>
+              <div style="font-size:9px;color:#333;font-weight:600;line-height:1.3;">如何拒绝不合理需求</div>
+              <div style="font-size:7px;color:#999;margin-top:2px;">5章节 · 2.3k学过</div>
+            </div>
+          </div>
+
+          <div style="display:flex;gap:6px;align-items:flex-start;">
+            <span style="font-size:14px;font-weight:700;color:#D4A090;line-height:1;min-width:12px;">2</span>
+            <div style="flex:1;min-width:0;">
+              <div style="width:100%;aspect-ratio:4/5;background:linear-gradient(135deg,#FDF0EA,#f0e0d8);border-radius:4px;display:flex;align-items:center;justify-content:center;font-size:20px;margin-bottom:5px;">💬</div>
+              <div style="font-size:9px;color:#333;font-weight:600;line-height:1.3;">非暴力沟通四步法</div>
+              <div style="font-size:7px;color:#999;margin-top:2px;">4章节 · 1.8k学过</div>
+            </div>
+          </div>
+
+          <div style="display:flex;gap:6px;align-items:flex-start;">
+            <span style="font-size:14px;font-weight:700;color:#D4A090;line-height:1;min-width:12px;">3</span>
+            <div style="flex:1;min-width:0;">
+              <div style="width:100%;aspect-ratio:4/5;background:linear-gradient(135deg,#FDF0EA,#f0e0d8);border-radius:4px;display:flex;align-items:center;justify-content:center;font-size:20px;margin-bottom:5px;">🎤</div>
+              <div style="font-size:9px;color:#333;font-weight:600;line-height:1.3;">即兴发言的黄金结构</div>
+              <div style="font-size:7px;color:#999;margin-top:2px;">6章节 · 6.5k学过</div>
+            </div>
+          </div>
+
+          <div style="display:flex;gap:6px;align-items:flex-start;">
+            <span style="font-size:14px;font-weight:700;color:#D4A090;line-height:1;min-width:12px;">4</span>
+            <div style="flex:1;min-width:0;">
+              <div style="width:100%;aspect-ratio:4/5;background:linear-gradient(135deg,#FDF0EA,#f0e0d8);border-radius:4px;display:flex;align-items:center;justify-content:center;font-size:20px;margin-bottom:5px;">👂</div>
+              <div style="font-size:9px;color:#333;font-weight:600;line-height:1.3;">深度倾听五层次</div>
+              <div style="font-size:7px;color:#999;margin-top:2px;">5章节 · 3.2k学过</div>
+            </div>
+          </div>
+
+          <div style="display:flex;gap:6px;align-items:flex-start;">
+            <span style="font-size:14px;font-weight:700;color:#D4A090;line-height:1;min-width:12px;">5</span>
+            <div style="flex:1;min-width:0;">
+              <div style="width:100%;aspect-ratio:4/5;background:linear-gradient(135deg,#FDF0EA,#f0e0d8);border-radius:4px;display:flex;align-items:center;justify-content:center;font-size:20px;margin-bottom:5px;">🤝</div>
+              <div style="font-size:9px;color:#333;font-weight:600;line-height:1.3;">破冰聊天指南</div>
+              <div style="font-size:7px;color:#999;margin-top:2px;">3章节 · 1.1k学过</div>
+            </div>
+          </div>
+
+          <div style="display:flex;gap:6px;align-items:flex-start;">
+            <span style="font-size:14px;font-weight:700;color:#D4A090;line-height:1;min-width:12px;">6</span>
+            <div style="flex:1;min-width:0;">
+              <div style="width:100%;aspect-ratio:4/5;background:linear-gradient(135deg,#FDF0EA,#f0e0d8);border-radius:4px;display:flex;align-items:center;justify-content:center;font-size:20px;margin-bottom:5px;">🧘</div>
+              <div style="font-size:9px;color:#333;font-weight:600;line-height:1.3;">情绪冲突化解</div>
+              <div style="font-size:7px;color:#999;margin-top:2px;">4章节 · 2.1k学过</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section" style="margin-top:16px;">
+  <h3>学习中心卡片结构</h3>
+</div>
+
+<table style="width:100%;font-size:12px;border-collapse:collapse;">
+  <tr style="border-bottom:1px solid #f0f0f0;">
+    <td style="padding:6px 10px;font-weight:700;color:#8B3A2A;">编号</td>
+    <td style="padding:6px 10px;">陶砖色序号（#D4A090），字号14px，字重700</td>
+  </tr>
+  <tr style="border-bottom:1px solid #f0f0f0;">
+    <td style="padding:6px 10px;font-weight:700;color:#8B3A2A;">卡片</td>
+    <td style="padding:6px 10px;">竖向：渐变色块(4:5比例) + emoji图标 + 课程标题 + 章节数/学习人数</td>
+  </tr>
+  <tr style="border-bottom:1px solid #f0f0f0;">
+    <td style="padding:6px 10px;font-weight:700;color:#8B3A2A;">布局</td>
+    <td style="padding:6px 10px;">两列网格（grid-cols-2），gap: 10px 8px</td>
+  </tr>
+  <tr>
+    <td style="padding:6px 10px;font-weight:700;color:#8B3A2A;">排列</td>
+    <td style="padding:6px 10px;">按学习人数降序，编号 1-6-12-2-7-3... 的 Z 字排列</td>
+  </tr>
+</table>

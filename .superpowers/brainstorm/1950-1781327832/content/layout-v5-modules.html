@@ -1,0 +1,317 @@
+<h2>趣魅 · 首页改造 v2（学习社区，非书店）</h2>
+<p class="subtitle">用微信读书的骨架，装趣魅的内容模块——课程、场景、练习、讨论</p>
+
+<div class="split">
+  <!-- LEFT: WeRead reference -->
+  <div class="mockup">
+    <div class="mockup-header">微信读书 · 社区（参考骨架）</div>
+    <div class="mockup-body" style="font-size:11px;line-height:1.5;background:#f5f5f5;padding:0;max-width:375px;margin:0 auto;">
+      <div style="background:#fff;padding:10px 14px;display:flex;align-items:center;gap:8px;border-bottom:1px solid #eee;">
+        <span style="font-weight:700;font-size:15px;">微信读书</span>
+        <div style="flex:1;height:28px;background:#f5f5f5;border-radius:14px;"></div>
+        <span>🔔</span>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:8px;padding:8px 0;">
+        <div style="background:#fff;padding:14px;">
+          <div style="font-size:13px;font-weight:700;margin-bottom:10px;">大家都在看</div>
+          <div style="display:flex;gap:10px;overflow-x:auto;">
+            <div style="min-width:80px;text-align:center;">
+              <div style="width:64px;height:86px;background:#f0f0f0;border-radius:4px;margin:0 auto 6px;"></div>
+              <div style="font-size:10px;">书名</div><div style="font-size:8px;color:#999;">作者</div>
+            </div>
+            <div style="min-width:80px;text-align:center;">
+              <div style="width:64px;height:86px;background:#f0f0f0;border-radius:4px;margin:0 auto 6px;"></div>
+              <div style="font-size:10px;">书名</div><div style="font-size:8px;color:#999;">作者</div>
+            </div>
+            <div style="min-width:80px;text-align:center;">
+              <div style="width:64px;height:86px;background:#f0f0f0;border-radius:4px;margin:0 auto 6px;"></div>
+              <div style="font-size:10px;">书名</div><div style="font-size:8px;color:#999;">作者</div>
+            </div>
+          </div>
+        </div>
+        <div style="background:#fff;padding:14px;">
+          <div style="font-size:13px;font-weight:700;margin-bottom:10px;">热门榜单</div>
+          <div style="display:flex;flex-direction:column;gap:10px;">
+            <div style="display:flex;gap:8px;align-items:center;"><span style="font-weight:700;color:#ccc;">1</span><div style="width:32px;height:42px;background:#f0f0f0;"></div><div style="font-size:10px;">书名 · 作者</div></div>
+            <div style="display:flex;gap:8px;align-items:center;"><span style="font-weight:700;color:#ccc;">2</span><div style="width:32px;height:42px;background:#f0f0f0;"></div><div style="font-size:10px;">书名 · 作者</div></div>
+          </div>
+        </div>
+        <div style="background:#fff;padding:14px;">
+          <div style="font-size:13px;font-weight:700;margin-bottom:10px;">书评讨论</div>
+          <div style="font-size:10px;color:#555;">用户头像 + 书评正文 + 嵌入书籍卡 + 互动栏</div>
+        </div>
+      </div>
+      <div style="background:#fff;border-top:1px solid #eee;display:flex;justify-content:space-around;padding:8px 0 4px;">
+        <div style="text-align:center;font-size:9px;color:#999;">📖<br>书架</div>
+        <div style="text-align:center;font-size:9px;color:#999;">🏪<br>书城</div>
+        <div style="text-align:center;font-size:9px;color:#333;">👥<br>社区</div>
+        <div style="text-align:center;font-size:9px;color:#999;">👤<br>我的</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- RIGHT: 趣魅 modules -->
+  <div class="mockup">
+    <div class="mockup-header">趣魅 · 首页（学习社区版）</div>
+    <div class="mockup-body" style="font-size:11px;line-height:1.5;background:#f5f5f5;padding:0;max-width:375px;margin:0 auto;">
+
+      <!-- Top bar -->
+      <div style="background:#fff;padding:10px 14px;display:flex;align-items:center;gap:8px;border-bottom:1px solid #eee;">
+        <span style="font-weight:700;font-size:15px;color:#8B3A2A;">🐴 趣魅</span>
+        <div style="flex:1;height:28px;background:#f5f5f5;border-radius:14px;display:flex;align-items:center;padding:0 10px;">
+          <span style="font-size:10px;color:#bbb;">🔍 搜索课程、场景...</span>
+        </div>
+        <span>🔔</span>
+      </div>
+
+      <!-- Category tabs -->
+      <div style="background:#fff;padding:10px 14px;display:flex;gap:8px;overflow-x:auto;border-bottom:1px solid #f5f5f5;">
+        <span style="padding:5px 14px;background:#8B3A2A;color:#fff;border-radius:20px;font-size:10px;white-space:nowrap;">推荐</span>
+        <span style="padding:5px 14px;color:#666;font-size:10px;white-space:nowrap;">职场沟通</span>
+        <span style="padding:5px 14px;color:#666;font-size:10px;white-space:nowrap;">亲密关系</span>
+        <span style="padding:5px 14px;color:#666;font-size:10px;white-space:nowrap;">公开演讲</span>
+        <span style="padding:5px 14px;color:#666;font-size:10px;white-space:nowrap;">日常社交</span>
+        <span style="padding:5px 14px;color:#666;font-size:10px;white-space:nowrap;">情绪管理</span>
+      </div>
+
+      <div style="display:flex;flex-direction:column;gap:8px;padding:8px 0;">
+
+        <!-- Module 1: 课程横滚 (WeRead "大家都在看" → "大家都在学") -->
+        <div style="background:#fff;padding:14px;">
+          <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:10px;">
+            <span style="font-size:13px;font-weight:700;color:#1a1a1a;">大家都在学</span>
+            <span style="font-size:10px;color:#D4A090;">全部课程 →</span>
+          </div>
+          <div style="display:flex;gap:8px;overflow-x:auto;">
+            <div style="min-width:88px;">
+              <div style="height:100px;background:linear-gradient(135deg,#FDF0EA,#F5E0D8);border-radius:6px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;margin-bottom:6px;">
+                <span style="font-size:22px;">💼</span>
+                <span style="font-size:9px;color:#8B3A2A;font-weight:600;">场景模拟</span>
+              </div>
+              <div style="font-size:10px;color:#333;font-weight:600;line-height:1.3;">如何拒绝<br>不合理需求</div>
+              <div style="font-size:8px;color:#D4A090;margin-top:2px;">2.3k人学过</div>
+            </div>
+            <div style="min-width:88px;">
+              <div style="height:100px;background:linear-gradient(135deg,#FDF0EA,#F5E0D8);border-radius:6px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;margin-bottom:6px;">
+                <span style="font-size:22px;">💬</span>
+                <span style="font-size:9px;color:#8B3A2A;font-weight:600;">对话分析</span>
+              </div>
+              <div style="font-size:10px;color:#333;font-weight:600;line-height:1.3;">非暴力沟通<br>四步法</div>
+              <div style="font-size:8px;color:#D4A090;margin-top:2px;">1.8k人学过</div>
+            </div>
+            <div style="min-width:88px;">
+              <div style="height:100px;background:linear-gradient(135deg,#FDF0EA,#F5E0D8);border-radius:6px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;margin-bottom:6px;">
+                <span style="font-size:22px;">🎤</span>
+                <span style="font-size:9px;color:#8B3A2A;font-weight:600;">技巧讲解</span>
+              </div>
+              <div style="font-size:10px;color:#333;font-weight:600;line-height:1.3;">演讲开场白<br>三秒抓住人</div>
+              <div style="font-size:8px;color:#D4A090;margin-top:2px;">4.1k人学过</div>
+            </div>
+            <div style="min-width:88px;">
+              <div style="height:100px;background:linear-gradient(135deg,#FDF0EA,#F5E0D8);border-radius:6px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;margin-bottom:6px;">
+                <span style="font-size:22px;">👂</span>
+                <span style="font-size:9px;color:#8B3A2A;font-weight:600;">框架学习</span>
+              </div>
+              <div style="font-size:10px;color:#333;font-weight:600;line-height:1.3;">深度倾听<br>五层次</div>
+              <div style="font-size:8px;color:#D4A090;margin-top:2px;">3.5k人学过</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Module 2: 场景入口 (grid, not list - more visual) -->
+        <div style="background:#fff;padding:14px;">
+          <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:10px;">
+            <span style="font-size:13px;font-weight:700;color:#1a1a1a;">按场景学习</span>
+            <span style="font-size:10px;color:#D4A090;">全部场景 →</span>
+          </div>
+          <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;">
+            <div style="text-align:center;padding:12px 6px;background:#fafafa;border-radius:6px;">
+              <div style="font-size:22px;">🏠</div>
+              <div style="font-size:10px;color:#555;margin-top:4px;">家庭沟通</div>
+              <div style="font-size:8px;color:#D4A090;">12节课</div>
+            </div>
+            <div style="text-align:center;padding:12px 6px;background:#fafafa;border-radius:6px;">
+              <div style="font-size:22px;">💼</div>
+              <div style="font-size:10px;color:#555;margin-top:4px;">职场沟通</div>
+              <div style="font-size:8px;color:#D4A090;">18节课</div>
+            </div>
+            <div style="text-align:center;padding:12px 6px;background:#fafafa;border-radius:6px;">
+              <div style="font-size:22px;">💕</div>
+              <div style="font-size:10px;color:#555;margin-top:4px;">亲密关系</div>
+              <div style="font-size:8px;color:#D4A090;">9节课</div>
+            </div>
+            <div style="text-align:center;padding:12px 6px;background:#fafafa;border-radius:6px;">
+              <div style="font-size:22px;">🎤</div>
+              <div style="font-size:10px;color:#555;margin-top:4px;">公开演讲</div>
+              <div style="font-size:8px;color:#D4A090;">15节课</div>
+            </div>
+            <div style="text-align:center;padding:12px 6px;background:#fafafa;border-radius:6px;">
+              <div style="font-size:22px;">🤝</div>
+              <div style="font-size:10px;color:#555;margin-top:4px;">社交场合</div>
+              <div style="font-size:8px;color:#D4A090;">7节课</div>
+            </div>
+            <div style="text-align:center;padding:12px 6px;background:#fafafa;border-radius:6px;">
+              <div style="font-size:22px;">🧘</div>
+              <div style="font-size:10px;color:#555;margin-top:4px;">情绪管理</div>
+              <div style="font-size:8px;color:#D4A090;">6节课</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Module 3: 今日推荐 (ranked list - WeRead "榜单" → "主编精选") -->
+        <div style="background:#fff;padding:14px;">
+          <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:10px;">
+            <span style="font-size:13px;font-weight:700;color:#1a1a1a;">主编精选</span>
+            <span style="font-size:10px;color:#D4A090;">查看全部 →</span>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:12px;">
+            <div style="display:flex;gap:10px;align-items:flex-start;">
+              <span style="font-size:14px;font-weight:700;color:#D4A090;min-width:14px;line-height:1.3;">1</span>
+              <div style="flex:1;min-width:0;">
+                <div style="font-size:11px;color:#333;font-weight:600;">如何向上级表达不同意见</div>
+                <div style="font-size:9px;color:#999;margin-top:3px;">职场沟通 · 5个章节 · 场景模拟 + 框架练习</div>
+                <div style="display:flex;gap:6px;margin-top:4px;">
+                  <span style="font-size:8px;padding:1px 6px;background:#FDF0EA;color:#8B3A2A;border-radius:3px;">热门</span>
+                  <span style="font-size:8px;color:#999;">1.2w人学过</span>
+                </div>
+              </div>
+            </div>
+            <div style="display:flex;gap:10px;align-items:flex-start;">
+              <span style="font-size:14px;font-weight:700;color:#D4A090;min-width:14px;line-height:1.3;">2</span>
+              <div style="flex:1;min-width:0;">
+                <div style="font-size:11px;color:#333;font-weight:600;">亲密关系中的深度倾听</div>
+                <div style="font-size:9px;color:#999;margin-top:3px;">情感沟通 · 4个章节 · 对话分析 + 角色扮演</div>
+                <div style="display:flex;gap:6px;margin-top:4px;">
+                  <span style="font-size:8px;padding:1px 6px;background:#FDF0EA;color:#8B3A2A;border-radius:3px;">新课</span>
+                  <span style="font-size:8px;color:#999;">8.9k人学过</span>
+                </div>
+              </div>
+            </div>
+            <div style="display:flex;gap:10px;align-items:flex-start;">
+              <span style="font-size:14px;font-weight:700;color:#D4A090;min-width:14px;line-height:1.3;">3</span>
+              <div style="flex:1;min-width:0;">
+                <div style="font-size:11px;color:#333;font-weight:600;">即兴发言的黄金结构</div>
+                <div style="font-size:9px;color:#999;margin-top:3px;">公开演讲 · 6个章节 · 技巧讲解 + 实景练习</div>
+                <div style="display:flex;gap:6px;margin-top:4px;">
+                  <span style="font-size:8px;padding:1px 6px;background:#FDF0EA;color:#8B3A2A;border-radius:3px;">推荐</span>
+                  <span style="font-size:8px;color:#999;">6.5k人学过</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Module 4: 每日一句 (轻量卡片, 暖色品牌温度) -->
+        <div style="background:#FDF0EA;padding:16px 14px;text-align:center;">
+          <p style="font-size:12px;color:#8B3A2A;line-height:1.9;margin:0;">
+            "沟通最大的问题在于，人们想当然地认为已经沟通了。"
+          </p>
+          <p style="font-size:9px;color:#D4A090;margin-top:8px;">—— 萧伯纳 · 每日一句</p>
+        </div>
+
+        <!-- Module 5: 疑难情景讨论 (WeRead 书评 → 情景讨论 Feed) -->
+        <div style="background:#fff;padding:14px;">
+          <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:10px;">
+            <span style="font-size:13px;font-weight:700;color:#1a1a1a;">情景讨论</span>
+            <span style="font-size:10px;color:#D4A090;">更多 →</span>
+          </div>
+
+          <div style="display:flex;flex-direction:column;gap:0;">
+            <!-- Post 1 -->
+            <div style="padding:12px 0;border-bottom:1px solid #f5f5f5;">
+              <div style="display:flex;align-items:center;gap:6px;margin-bottom:6px;">
+                <div style="width:22px;height:22px;border-radius:50%;background:#FDF0EA;display:flex;align-items:center;justify-content:center;font-size:10px;">🐴</div>
+                <span style="font-size:10px;font-weight:600;color:#555;">匿名用户</span>
+                <span style="font-size:8px;color:#ccc;margin-left:auto;">2小时前</span>
+              </div>
+              <p style="font-size:11px;color:#444;line-height:1.7;margin:0 0 8px;">
+                老板在全员会议上点名批评我的项目进度，我该当场辩解还是会后私下沟通？哪种方式更专业？
+              </p>
+              <div style="display:flex;gap:6px;">
+                <span style="font-size:8px;padding:2px 6px;background:#f5f5f5;color:#999;border-radius:3px;">🏢 职场沟通</span>
+                <span style="font-size:8px;padding:2px 6px;background:#f5f5f5;color:#999;border-radius:3px;">😰 冲突处理</span>
+              </div>
+              <div style="display:flex;gap:16px;margin-top:8px;">
+                <span style="font-size:9px;color:#bbb;">❤️ 56</span>
+                <span style="font-size:9px;color:#bbb;">💬 23个回答</span>
+              </div>
+            </div>
+
+            <!-- Post 2 -->
+            <div style="padding:12px 0;">
+              <div style="display:flex;align-items:center;gap:6px;margin-bottom:6px;">
+                <div style="width:22px;height:22px;border-radius:50%;background:#FDF0EA;display:flex;align-items:center;justify-content:center;font-size:10px;">🐴</div>
+                <span style="font-size:10px;font-weight:600;color:#555;">学习者A</span>
+                <span style="font-size:8px;color:#ccc;margin-left:auto;">5小时前</span>
+              </div>
+              <p style="font-size:11px;color:#444;line-height:1.7;margin:0 0 8px;">
+                学了非暴力沟通后，第一次对妈妈用了"观察-感受-需要-请求"四步法，结果她哭了……不是感动，是觉得我太正式了。怎么在日常生活中自然地使用这些技巧？
+              </p>
+              <div style="display:flex;gap:6px;">
+                <span style="font-size:8px;padding:2px 6px;background:#f5f5f5;color:#999;border-radius:3px;">💕 亲密关系</span>
+                <span style="font-size:8px;padding:2px 6px;background:#f5f5f5;color:#999;border-radius:3px;">🤔 学习困惑</span>
+              </div>
+              <div style="display:flex;gap:16px;margin-top:8px;">
+                <span style="font-size:9px;color:#bbb;">❤️ 89</span>
+                <span style="font-size:9px;color:#bbb;">💬 41个回答</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bottom tab (5 items) -->
+      <div style="background:#fff;border-top:1px solid #eee;display:flex;justify-content:space-around;padding:8px 0 4px;">
+        <div style="text-align:center;font-size:9px;color:#8B3A2A;font-weight:600;">🏠<br>首页</div>
+        <div style="text-align:center;font-size:9px;color:#bbb;">📚<br>学习</div>
+        <div style="text-align:center;font-size:9px;color:#bbb;">✏️<br>练习</div>
+        <div style="text-align:center;font-size:9px;color:#bbb;">👥<br>社区</div>
+        <div style="text-align:center;font-size:9px;color:#bbb;">👤<br>我的</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <h3>每个模块对应 趣魅 的实际内容</h3>
+</div>
+
+<table style="width:100%;font-size:12px;border-collapse:collapse;">
+  <tr style="border-bottom:1px solid #f0f0f0;">
+    <th style="padding:8px;text-align:left;color:#8B3A2A;">模块</th>
+    <th style="padding:8px;text-align:left;color:#8B3A2A;">微信读书参考</th>
+    <th style="padding:8px;text-align:left;color:#8B3A2A;">趣魅内容</th>
+    <th style="padding:8px;text-align:left;color:#8B3A2A;">数据源</th>
+  </tr>
+  <tr style="border-bottom:1px solid #f5f5f5;">
+    <td style="padding:8px;">大家都在学</td>
+    <td style="padding:8px;color:#999;">大家都在看（横滚书封）</td>
+    <td style="padding:8px;">课程卡片横滚（图标 + 类型标签 + 标题 + 学习人数）</td>
+    <td style="padding:8px;color:#999;">prisma.lesson</td>
+  </tr>
+  <tr style="border-bottom:1px solid #f5f5f5;">
+    <td style="padding:8px;">按场景学习</td>
+    <td style="padding:8px;color:#999;">分类网格</td>
+    <td style="padding:8px;">场景图标网格（emoji + 名称 + 课程数）</td>
+    <td style="padding:8px;color:#999;">categories 配置</td>
+  </tr>
+  <tr style="border-bottom:1px solid #f5f5f5;">
+    <td style="padding:8px;">主编精选</td>
+    <td style="padding:8px;color:#999;">热门榜单（排行 + 书封 + 评分）</td>
+    <td style="padding:8px;">精选课程排行（编号 + 标题 + 标签 + 学习人数）</td>
+    <td style="padding:8px;color:#999;">prisma.lesson (精选)</td>
+  </tr>
+  <tr style="border-bottom:1px solid #f5f5f5;">
+    <td style="padding:8px;">每日一句</td>
+    <td style="padding:8px;color:#999;">-</td>
+    <td style="padding:8px;">暖色轻量卡片（品牌温度保留）</td>
+    <td style="padding:8px;color:#999;">prisma.quote</td>
+  </tr>
+  <tr>
+    <td style="padding:8px;">情景讨论</td>
+    <td style="padding:8px;color:#999;">书评 Feed（头像 + 正文 + 嵌入书卡 + 互动）</td>
+    <td style="padding:8px;">社区帖子 Feed（头像 + 正文 + 标签 + 互动数）</td>
+    <td style="padding:8px;color:#999;">prisma.post</td>
+  </tr>
+</table>

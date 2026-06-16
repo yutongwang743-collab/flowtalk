@@ -1,0 +1,82 @@
+<h2>趣魅——选一个设计方向</h2>
+<p class="subtitle">每种风格展示首页 Hero + 卡片的效果。先定大方向，再细化。</p>
+
+<div class="cards">
+  <div class="card" data-choice="bold-color" onclick="toggleSelect(this)">
+    <div class="card-image">
+      <div style="background: linear-gradient(135deg, #FF6B35, #F7931E); border-radius: 16px; padding: 28px 24px; color: white; position: relative; overflow: hidden;">
+        <div style="position: absolute; right: 12px; top: 12px; font-size: 56px; opacity: 0.3;">🐴</div>
+        <div style="position: relative; z-index: 1;">
+          <div style="font-size: 10px; letter-spacing: 0.15em; opacity: 0.8; margin-bottom: 12px;">● 2026 · 马年</div>
+          <div style="font-size: 26px; font-weight: 900; line-height: 1.2; margin-bottom: 8px;">每一次对话，<br>都是一次成长</div>
+          <div style="font-size: 12px; opacity: 0.85; margin-bottom: 18px;">不教话术，教你沟通的思维框架</div>
+          <div style="display: flex; gap: 8px;">
+            <span style="background: white; color: #FF6B35; padding: 8px 18px; border-radius: 20px; font-size: 12px; font-weight: 700;">开始学习 →</span>
+            <span style="background: rgba(255,255,255,0.2); padding: 8px 18px; border-radius: 20px; font-size: 12px; font-weight: 600;">去练习</span>
+          </div>
+        </div>
+      </div>
+      <div style="display: flex; gap: 8px; margin-top: 8px;">
+        <div style="flex:1; background: white; border-radius: 10px; padding: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); text-align: center; font-size: 11px; color: #FF6B35; font-weight: 700;">🤝 初次见面</div>
+        <div style="flex:1; background: white; border-radius: 10px; padding: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); text-align: center; font-size: 11px; color: #F7931E; font-weight: 700;">💼 职场沟通</div>
+        <div style="flex:1; background: white; border-radius: 10px; padding: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); text-align: center; font-size: 11px; color: #F7931E; font-weight: 700;">💕 约会交流</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>🔥 活力暖橙</h3>
+      <p>高饱和暖色渐变 · 圆润按钮 · 大胆撞色<br>像 Duolingo 一样有能量。年轻、热情、不沉闷。</p>
+    </div>
+  </div>
+
+  <div class="card" data-choice="soft-cute" onclick="toggleSelect(this)">
+    <div class="card-image">
+      <div style="background: #FFF5F5; border: 2px solid #FFD4D4; border-radius: 16px; padding: 28px 24px; position: relative; overflow: hidden;">
+        <div style="position: absolute; right: 8px; top: 4px; font-size: 56px;">🐴</div>
+        <div style="position: relative; z-index: 1;">
+          <div style="display: inline-block; background: #FFE0E0; color: #D46868; padding: 3px 10px; border-radius: 12px; font-size: 10px; font-weight: 700; margin-bottom: 14px;">🐾 小趣陪你聊</div>
+          <div style="font-size: 26px; font-weight: 800; color: #4A3B3B; line-height: 1.2; margin-bottom: 8px;">每一次对话，<br>都是一次成长</div>
+          <div style="font-size: 12px; color: #B8A0A0; margin-bottom: 18px;">不教话术，教你沟通的思维框架</div>
+          <div style="display: flex; gap: 8px;">
+            <span style="background: #FF8A8A; color: white; padding: 8px 18px; border-radius: 20px; font-size: 12px; font-weight: 700;">开始学习 →</span>
+            <span style="background: white; border: 2px solid #FFD4D4; color: #D46868; padding: 8px 18px; border-radius: 20px; font-size: 12px; font-weight: 600;">去练习</span>
+          </div>
+        </div>
+      </div>
+      <div style="display: flex; gap: 8px; margin-top: 8px;">
+        <div style="flex:1; background: white; border: 2px solid #FFE0E0; border-radius: 10px; padding: 12px; text-align: center; font-size: 11px; color: #D46868; font-weight: 700;">🤝 初次见面</div>
+        <div style="flex:1; background: white; border: 2px solid #FFE0E0; border-radius: 10px; padding: 12px; text-align: center; font-size: 11px; color: #D46868; font-weight: 700;">💼 职场沟通</div>
+        <div style="flex:1; background: white; border: 2px solid #FFE0E0; border-radius: 10px; padding: 12px; text-align: center; font-size: 11px; color: #D46868; font-weight: 700;">💕 约会交流</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>🌸 软萌粉彩</h3>
+      <p>粉色系 + 圆角 + 细边框 · 像三丽鸥一样的治愈感<br>萌宠、贴纸、柔光。像一只毛绒玩具。</p>
+    </div>
+  </div>
+
+  <div class="card" data-choice="dark-elegant" onclick="toggleSelect(this)">
+    <div class="card-image">
+      <div style="background: #1E1E1E; border-radius: 16px; padding: 28px 24px; color: white; position: relative; overflow: hidden;">
+        <div style="position: absolute; right: 12px; top: 12px; font-size: 56px; opacity: 0.2;">🐴</div>
+        <div style="position: relative; z-index: 1;">
+          <div style="display: inline-block; border: 1px solid rgba(255,255,255,0.2); padding: 3px 10px; border-radius: 4px; font-size: 10px; letter-spacing: 0.15em; margin-bottom: 14px;">2026 · 马年</div>
+          <div style="font-size: 26px; font-weight: 700; line-height: 1.2; margin-bottom: 8px; font-family: serif;">每一次对话，<br>都是一次成长</div>
+          <div style="font-size: 12px; opacity: 0.55; margin-bottom: 18px;">不教话术，教你沟通的思维框架</div>
+          <div style="display: flex; gap: 8px;">
+            <span style="background: white; color: #1E1E1E; padding: 8px 18px; border-radius: 6px; font-size: 12px; font-weight: 700;">开始学习 →</span>
+            <span style="background: transparent; border: 1px solid rgba(255,255,255,0.2); padding: 8px 18px; border-radius: 6px; font-size: 12px; font-weight: 600;">去练习</span>
+          </div>
+        </div>
+      </div>
+      <div style="display: flex; gap: 8px; margin-top: 8px;">
+        <div style="flex:1; background: #2A2A2A; border-radius: 8px; padding: 12px; text-align: center; font-size: 11px; color: #CCC; font-weight: 600;">🤝 初次见面</div>
+        <div style="flex:1; background: #2A2A2A; border-radius: 8px; padding: 12px; text-align: center; font-size: 11px; color: #CCC; font-weight: 600;">💼 职场沟通</div>
+        <div style="flex:1; background: #2A2A2A; border-radius: 8px; padding: 12px; text-align: center; font-size: 11px; color: #CCC; font-weight: 600;">💕 约会交流</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>🌙 暗黑优雅</h3>
+      <p>深色底 + 金色点缀 · 衬线字体 · 克制留白<br>像一本高端杂志的深夜版。沉稳、有格调。</p>
+    </div>
+  </div>
+</div>

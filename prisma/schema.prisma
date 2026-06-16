@@ -1,0 +1,109 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id        String     @id @default(cuid())
+  name      String
+  email     String     @unique
+  avatar    String?
+  createdAt DateTime   @default(now())
+
+  posts          Post[]
+  comments       Comment[]
+  favorites      Favorite[]
+  practiceResponses PracticeResponse[]
+}
+
+model Lesson {
+  id          String   @id @default(cuid())
+  title       String
+  slug        String   @unique
+  description String
+  category    String
+  tags        String   @default("")
+  coverImage  String?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  sections LessonSection[]
+}
+
+model LessonSection {
+  id       String @id @default(cuid())
+  lessonId String
+  type     String
+  title    String
+  content  String
+  order    Int
+
+  lesson Lesson @relation(fields: [lessonId], references: [id], onDelete: Cascade)
+}
+
+model PracticeScenario {
+  id          String   @id @default(cuid())
+  title       String
+  description String
+  prompt      String
+  difficulty  String
+  createdAt   DateTime @default(now())
+
+  responses PracticeResponse[]
+}
+
+model PracticeResponse {
+  id         String   @id @default(cuid())
+  userId     String
+  scenarioId String
+  content    String
+  createdAt  DateTime @default(now())
+
+  user     User             @relation(fields: [userId], references: [id])
+  scenario PracticeScenario @relation(fields: [scenarioId], references: [id])
+}
+
+model Post {
+  id        String   @id @default(cuid())
+  userId    String
+  title     String
+  content   String
+  createdAt DateTime @default(now())
+
+  author   User      @relation(fields: [userId], references: [id])
+  comments Comment[]
+}
+
+model Comment {
+  id        String   @id @default(cuid())
+  postId    String
+  userId    String
+  content   String
+  createdAt DateTime @default(now())
+
+  post   Post @relation(fields: [postId], references: [id], onDelete: Cascade)
+  author User @relation(fields: [userId], references: [id])
+}
+
+model Favorite {
+  id         String   @id @default(cuid())
+  userId     String
+  targetType String
+  targetId   String
+  createdAt  DateTime @default(now())
+
+  user User @relation(fields: [userId], references: [id])
+
+  @@unique([userId, targetType, targetId])
+}
+
+model Quote {
+  id        String   @id @default(cuid())
+  content   String
+  author    String
+  createdAt DateTime @default(now())
+}
