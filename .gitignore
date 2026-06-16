@@ -29,3 +29,5 @@ next-env.d.ts
 # misc
 *.pem
 .DS_Store
+
+.vercel

@@ -19,7 +19,7 @@ export function TopNavbar() {
       background: "#8B3A2A",
     }}>
       <div style={{
-        margin: "0 auto", maxWidth: "960px", height: "48px",
+        margin: "0 auto", maxWidth: "1200px", height: "48px",
         display: "flex", alignItems: "center", gap: "20px",
         padding: "0 20px", overflowX: "auto",
       }}>
