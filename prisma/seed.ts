@@ -20,7 +20,8 @@ async function main() {
       title: "如何认识陌生人",
       slug: "how-to-meet-strangers",
       description: "在聚会中自然地认识新朋友，打破冷场的尴尬",
-      category: "first-meeting",
+      category: "初次见面",
+      tags: "初次见面,破冰聊天",
       sections: {
         create: [
           {
@@ -65,7 +66,8 @@ async function main() {
       title: "如何向领导汇报工作",
       slug: "how-to-report-to-boss",
       description: "让领导听懂你的工作价值，不是展示你有多忙",
-      category: "workplace",
+      category: "老板交流",
+      tags: "老板交流,同事聊天",
       sections: {
         create: [
           {
@@ -109,7 +111,8 @@ async function main() {
       title: "第一次约会聊什么",
       slug: "first-date-conversation",
       description: "让约会对话自然流动，从尴尬到投缘",
-      category: "dating",
+      category: "约会互动",
+      tags: "约会互动,第一次见面",
       sections: {
         create: [
           {
